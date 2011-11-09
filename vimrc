@@ -1,7 +1,8 @@
+syntax enable
+set nonumber
 set nocompatible                " (cp) use Vim defaults (much better)
 set showcmd                     " (sc) display an incomplete command in the lower right
 set nowrap
-set nocompatible
 set backupdir=~/.tmp
 set directory=~/.tmp
 set wildmenu
@@ -20,6 +21,8 @@ set whichwrap=b,s,<,>,[,]
 set scrolloff=3
 set so=0 " allows buffer to scroll before reaching border
 set sidescroll=10 " amount buffer is scrolled to when on a word outside of viewing range
+set cursorline
+colorscheme railscasts
 
 highlight Cursor guifg=white guibg=black
 highlight iCursor guifg=white guibg=steelblue
