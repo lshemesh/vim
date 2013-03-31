@@ -22,6 +22,7 @@ set scrolloff=3
 set so=0 " allows buffer to scroll before reaching border
 set sidescroll=10 " amount buffer is scrolled to when on a word outside of viewing range
 set cursorline
+set t_Co=256
 colorscheme railscasts
 
 highlight Cursor guifg=white guibg=black
