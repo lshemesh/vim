@@ -1,4 +1,5 @@
 syntax enable
+set mouse-=a
 set nonumber
 set nocompatible                " (cp) use Vim defaults (much better)
 set showcmd                     " (sc) display an incomplete command in the lower right
