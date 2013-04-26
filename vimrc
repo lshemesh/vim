@@ -58,6 +58,6 @@ map <C-l> <C-w>l
 map , :ZoomWin<CR>
 imap <C-n> <C-x><C-u>
 
-autocmd BufEnter * lcd %:p:h
+"autocmd BufEnter * lcd %:p:h
 filetype plugin indent on
 nnoremap <space> za
