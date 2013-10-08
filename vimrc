@@ -25,7 +25,17 @@ set sidescroll=10 " amount buffer is scrolled to when on a word outside of viewi
 set cursorline
 set t_Co=256
 let g:NERDTreeDirArrows=0
-colorscheme railscasts
+scriptencoding utf-8
+set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=utf-8
+colorscheme jellybeans
+
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
 
 highlight Cursor guifg=white guibg=black
 highlight iCursor guifg=white guibg=steelblue
@@ -51,13 +61,22 @@ map <C-b> :tabp<CR>
 map <C-n> :tabn<CR>
 map <C-t> :tabnew
 map <C-m> :NERDTreeToggle<CR>
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-map , :ZoomWin<CR>
 imap <C-n> <C-x><C-u>
 
-"autocmd BufEnter * lcd %:p:h
+autocmd BufEnter * lcd %:p:h
 filetype plugin indent on
 nnoremap <space> za
+"
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'christoomey/vim-tmux-navigator'
+
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
