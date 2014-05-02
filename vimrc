@@ -70,13 +70,13 @@ nnoremap <space> za
 " let Vundle manage Vundle
 " required! 
 Bundle 'gmarik/vundle'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'christoomey/vim-tmux-navigator'
+"Bundle 'Valloric/YouCompleteMe'
+"Bundle 'christoomey/vim-tmux-navigator'
 
-let g:tmux_navigator_no_mappings = 1
+"let g:tmux_navigator_no_mappings = 1
 
-nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
-nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
-nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
-nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
-nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
+"nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
+"nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
+"nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
+"nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
+"nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
