@@ -33,8 +33,8 @@ colorscheme jellybeans
 
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+"set rtp+=~/.vim/bundle/vundle/
+"call vundle#rc()
 
 
 highlight Cursor guifg=white guibg=black
@@ -69,7 +69,7 @@ nnoremap <space> za
 "
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+"Bundle 'gmarik/vundle'
 "Bundle 'Valloric/YouCompleteMe'
 "Bundle 'christoomey/vim-tmux-navigator'
 
