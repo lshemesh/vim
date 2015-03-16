@@ -1,3 +1,4 @@
+execute pathogen#infect()
 syntax enable
 set mouse-=a
 set nonumber
@@ -29,7 +30,9 @@ scriptencoding utf-8
 set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
-colorscheme jellybeans
+set background=light
+let g:solarized_termcolors=256
+colorscheme solarized
 
 filetype off
 
@@ -66,17 +69,9 @@ imap <C-n> <C-x><C-u>
 autocmd BufEnter * lcd %:p:h
 filetype plugin indent on
 nnoremap <space> za
-"
-" let Vundle manage Vundle
-" required! 
-"Bundle 'gmarik/vundle'
-"Bundle 'Valloric/YouCompleteMe'
-"Bundle 'christoomey/vim-tmux-navigator'
 
-"let g:tmux_navigator_no_mappings = 1
+nnoremap <leader>el :ElmEvalLine<CR>
+vnoremap <leader>es :<C-u>ElmEvalSelection<CR>
+nnoremap <leader>ep :ElmPrintTypes<CR>
+nnoremap <leader>em :ElmMakeCurrentFile<CR>
 
-"nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
-"nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
-"nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
-"nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
-"nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
