@@ -36,10 +36,6 @@ colorscheme solarized
 
 filetype off
 
-"set rtp+=~/.vim/bundle/vundle/
-"call vundle#rc()
-
-
 highlight Cursor guifg=white guibg=black
 highlight iCursor guifg=white guibg=steelblue
 highlight NonText ctermfg=7 guifg=gray
