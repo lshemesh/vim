@@ -16,6 +16,7 @@ set showtabline=2
 set autoindent
 set smartindent
 set shiftwidth=2 "indent width for autoindent
+set softtabstop=2
 set fileformats=unix,dos " sets <LF> (unix) first, then tries <CR><LF> (dos) next
 set path=$PWD/**
 set backspace=2 " allows deletion of characters prior to insertion mode
