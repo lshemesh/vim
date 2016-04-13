@@ -31,7 +31,7 @@ scriptencoding utf-8
 set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
-set background=light
+set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
@@ -63,7 +63,11 @@ map <C-t> :tabnew
 map <C-m> :NERDTreeToggle<CR>
 imap <C-n> <C-x><C-u>
 
-autocmd BufEnter * lcd %:p:h
+"augroup vimrc_autocmd
+"  autocmd!
+"  autocmd BufEnter * lcd %:p:h
+"augroup END
+
 filetype plugin indent on
 nnoremap <space> za
 
